@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExternalAccessoryRepro"
+             x:Class="ExternalAccessoryRepro.MainPage"
+             Title="Bluetooth Accessory">
+
+    <ContentPage.BindingContext>
+        <local:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="30"
+        VerticalOptions="Center">
+
+        <Button
+            Text="Show Bluetooth Accessory Picker"
+            Command="{Binding ShowBluetoothAccessoryPickerCommand}"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

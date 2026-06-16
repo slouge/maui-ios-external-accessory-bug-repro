@@ -1,0 +1,31 @@
+# .NET / MSBuild
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# macOS
+.DS_Store
+*.DS_Store
+
+# Visual Studio
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+# MAUI / Xcode build artifacts
+*.ipa
+*.dSYM
+*.xcarchive
+DerivedData/
+
+# Logs
+*.log

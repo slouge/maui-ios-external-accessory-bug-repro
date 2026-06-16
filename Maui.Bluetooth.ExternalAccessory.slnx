@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Maui9ExternalAccessoryRepro\Maui9ExternalAccessoryRepro.csproj" />
+  <Project Path="Maui10ExternalAccessoryRepro\Maui10ExternalAccessoryRepro.csproj" />
+</Solution>
