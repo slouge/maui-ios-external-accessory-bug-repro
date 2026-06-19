@@ -19,7 +19,7 @@ public partial class MainViewModel : ObservableObject
         {
             Log("ShowBluetoothAccessoryPicker: invoking EAAccessoryManager picker");
             EAAccessoryManager.SharedAccessoryManager.ShowBluetoothAccessoryPicker(
-                nameFilter: null,
+                predicate: null,
                 completion: (error) =>
                 {
                     if (error is not null)
