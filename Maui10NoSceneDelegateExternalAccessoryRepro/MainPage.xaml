@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ExternalAccessoryRepro"
              x:Class="ExternalAccessoryRepro.MainPage"
-             Title="Bluetooth Accessory">
+             Title="Bluetooth Accessory"
+             x:DataType="local:MainViewModel">
 
     <ContentPage.BindingContext>
         <local:MainViewModel />

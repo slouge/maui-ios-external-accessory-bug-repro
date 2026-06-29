@@ -6,8 +6,8 @@ This repository contains two minimal .NET MAUI iOS applications that reproduce a
 
 | Project | .NET MAUI | Target Framework | iOS SDK |
 |---|---|---|---|
-| `Maui9ExternalAccessoryRepro` | MAUI 9 | `net9.0-ios` | iOS 18 (Xcode 16) |
 | `Maui10ExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26 (Xcode 26) |
+| `Maui10NoSceneDelegateExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26 (Xcode 26) |
 
 The source code is identical between both projects — only the `.csproj` target framework and SDK version differ.
 
@@ -31,7 +31,7 @@ Logs are emitted with the prefix `[ExternalAccessoryRepro]` and are visible in t
 - `AppDelegate.cs` — overrides `GetConfiguration` to return a `UISceneConfiguration` named `"Default Configuration"`
 - `Info.plist` — declares `UIApplicationSceneManifest` with `UISceneDelegateClassName` pointing to `SceneDelegate`
 
-`Maui9ExternalAccessoryRepro` retains the traditional `UIApplicationDelegate`-only lifecycle.
+`Maui10NoSceneDelegateExternalAccessoryRepro` retains the traditional `UIApplicationDelegate`-only lifecycle.
 
 ## Info.plist Configuration
 
@@ -45,9 +45,8 @@ Both projects are configured per the [Brother Mobile SDK iOS Getting Started gui
 
 ## Prerequisites
 
-- macOS with **Xcode 16** (for MAUI 9 / iOS 18) or **Xcode 26** (for MAUI 10 / iOS 26)
-- .NET 9 SDK with `maui-ios` workload (for `Maui9ExternalAccessoryRepro`)
-- .NET 10 SDK with `maui-ios` workload (for `Maui10ExternalAccessoryRepro`)
+- macOS with **Xcode 26**
+- .NET 10 SDK with `maui-ios` workload
 
 Install workloads:
 ```bash
@@ -60,6 +59,6 @@ Open `Maui.Bluetooth.ExternalAccessory.slnx` in Visual Studio / Rider, select th
 
 Or via CLI:
 ```bash
-dotnet build Maui9ExternalAccessoryRepro/Maui9ExternalAccessoryRepro.csproj -f net9.0-ios
 dotnet build Maui10ExternalAccessoryRepro/Maui10ExternalAccessoryRepro.csproj -f net10.0-ios
+dotnet build Maui10NoSceneDelegateExternalAccessoryRepro/Maui10NoSceneDelegateExternalAccessoryRepro.csproj -f net10.0-ios
 ```

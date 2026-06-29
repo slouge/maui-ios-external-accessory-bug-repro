@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net10.0-ios</TargetFrameworks>
+    <OutputType>exe</OutputType>
     <RootNamespace>ExternalAccessoryRepro</RootNamespace>
     <UseMaui>true</UseMaui>
     <SingleProject>true</SingleProject>
@@ -12,7 +13,7 @@
     <ApplicationTitle>Maui10ExternalAccessoryRepro</ApplicationTitle>
 
     <!-- App Identifier -->
-    <ApplicationId>com.legrand.maui10externalaccessoryrepro</ApplicationId>
+    <ApplicationId>com.sample.maui10externalaccessoryrepro</ApplicationId>
 
     <!-- Versions -->
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
