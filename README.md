@@ -6,8 +6,8 @@ This repository contains two minimal .NET MAUI iOS applications that reproduce a
 
 | Project | .NET MAUI | Target Framework | iOS SDK |
 |---|---|---|---|
-| `Maui10ExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26 (Xcode 26) |
-| `Maui10NoSceneDelegateExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26 (Xcode 26) |
+| `Maui10ExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26.5 SDK (Xcode 26.6) |
+| `Maui10NoSceneDelegateExternalAccessoryRepro` | MAUI 10 | `net10.0-ios` | iOS 26.5 SDK (Xcode 26.6) |
 
 The source code is identical between both projects — only the `.csproj` target framework and SDK version differ.
 
@@ -45,8 +45,8 @@ Both projects are configured per the [Brother Mobile SDK iOS Getting Started gui
 
 ## Prerequisites
 
-- macOS with **Xcode 26**
-- .NET 10 SDK with `maui-ios` workload
+- macOS 26.2+ with **Xcode 26.6** (the version required by the .NET 10 iOS workload 26.5.10318)
+- .NET **10.0.404** SDK (runtime 10.0.15) with the `maui-ios` workload (pinned by `global.json`)
 
 Install workloads:
 ```bash
