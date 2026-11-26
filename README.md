@@ -46,11 +46,11 @@ Both projects are configured per the [Brother Mobile SDK iOS Getting Started gui
 ## Prerequisites
 
 - macOS 26.2+ with **Xcode 26.6** (the version required by the .NET 10 iOS workload 26.5.10318)
-- .NET **10.0.404** SDK (runtime 10.0.15) with the `maui-ios` workload (pinned by `global.json`)
+- .NET **10.0.404** SDK (runtime 10.0.15) with the `maui-ios` workload set **10.0.401** (iOS 26.5.10318). Newer workload sets (10.0.401.1+) target Xcode 27 and will fail with Xcode 26.6
 
 Install workloads:
 ```bash
-dotnet workload install maui-ios
+dotnet workload install maui-ios --version 10.0.401
 ```
 
 ## Building
